@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <P>No exemplo a baixo vemos a tag OL para criar uma lista ordenada automaticamente, com o auxilio do parametro TYPE= que da opção de 3 tipos (Numérica[1], Alfabética[A/a] ou Romana[I/i]) e o START que seleciona quando começa a contagem podemos dar mais
+        detalhes a lista.</P>
+    <ol type="A" start="3">
+        <li>Acordar</li>
+        <li>Meditar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <p>Vemos o mesmo exemplo só que utilizo a tag UL para criar uma lista sem ordem e usando o parametro TYPE= que aqui tem 3 opções (square, disc e circle)</p>
+    <ul type="square">
+        <li>Acordar</li>
+        <li>Meditar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ul>
+    <h2>Criando listas dentro de listas</h2>
+    <p>É bem simples na verdade, é só colocar ou tag OL ou a tag UL dentro da tag LI e tambem podemos usar todos os parametros dos exemplos a cima.</p>
+    <p><strong>EX.</strong>
+        <ol type="A">
+            <li>Acordar</li>
+            <ul type="circle">
+                <li>5:00</li>
+            </ul>
+            <li>Meditar</li>
+            <li>Tomar banho...</li>
+        </ol>
+    </p>
+    <h2>Listas de definição</h2>
+    <p>Aqui, usamos a tag DL para criar esta estrutura de lista e dentro dela<br> utilizamos a tag DT para dar o titulo a lista, e para dar a explicação usamos a tag DD</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HYPER TEXT MARKUP LANGUAGE</dd>
+        <DD>(LINGUAGEM DE MARCAÇÃO PARA A CRIAÇÃO DO CONTEUDO DE UM SITE)</DD>
+        <dt>CSS</dt>
+        <dd>CASCADING STYLE SHEETS</dd>
+        <dd>(LINGUAGEM DE MARCAÇÃO PARA A CRIAÇÃO DO DESIGN DE UM SITE)</dd>
+        <dt>JAVASCRIPT</dt>
+        <DD>(LINGUAGEM DE PROGRAMAÇÃO PARA A CRIAÇÃO DE INTERATIVIDADE DE UM SITE)</DD>
+    </dl>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+/* SELETORES PERSONALIZADOS
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children (elemento filho)
+*/
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+
+}
+
+a:visited {  /* O :visited é uma Pseudo-classe do CSS para indicar se o link em questão já foi visitado pelo usuário.*/
+    color: darkred;
+}
+
+a:hover {  /* O :hover é uma pseudo-classe CSS que ao ser utilizada ativa estilos em um elemento. O :hover possibilita um elemento ter o seu estilo alterado através da ação do usuário, quando o próprio passa o cursor do mouse sobre o elemento. */
+    color: black;
+    text-decoration: underline;
+}
+
+a:active { /* :active – quando ativamos o elemento. Por exemplo, quando clicamos em um link e não soltamos o botão do mouse. Nesse momento, estamos ativando a ação do elemento.  */
+    color: yellow;
+}
+
+.especial { /* Aqui usamos uma 'class' */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a::before { /* ::before cria um pseudo-elemento que é o primeiro filho do elemento atingido. É frequentemente utilizado para adicionar conteúdo decorativo à um element utilizando a propriedade 'content' . Este elemento é inline por padrão. */
+    content: ' ⇒ ';
+}
+
+a::after { /* ::after cria um pseudo-elemento que é o último filho do elemento selecionado. Muitas vezes é usado para adicionar e melhorar o conteúdo de um elemento como a propriedade content . É inline por padrão. */
+    content: ' ⇐ ';
+}
+
+
